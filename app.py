@@ -85,7 +85,7 @@ def append_to_json_file(file_path, new_data):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(existing_data, file, ensure_ascii=False, indent=4)
 
-product_details_file_path = 'AI_products.json'
+product_details_file_path = 'products.json'
 append_to_json_file(product_details_file_path, product_details_list)
 
 print(f"Product details have been appended to {product_details_file_path}")
